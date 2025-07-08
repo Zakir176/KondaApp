@@ -6,8 +6,10 @@
     xmlns:local="clr-namespace:KondaApp"
     Title="KondaApp">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+            <!-- Page Routing -->
+    <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+    <!-- <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate pages:LoginPage}" />
+    <ShellContent Route="RegisterPage" ContentTemplate="{DataTemplate pages:RegisterPage}" />
+    <ShellContent Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" /> -->
 
 </Shell>

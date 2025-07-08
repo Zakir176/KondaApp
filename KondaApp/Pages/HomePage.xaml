@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="KondaApp.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="pink"
+    Title="Konda">
+
+    <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!-- Swipeable Card with Glassmorphism -->
+        <Border
+            x:Name="ProfileCard"
+            Stroke="#FFFFFF"
+            BackgroundColor="#80FFFFFF"
+            StrokeThickness="1"
+            StrokeShape="RoundRectangle 30"
+            HeightRequest="460"
+            WidthRequest="320"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                                <Frame
+                        CornerRadius="100"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"
+                        HasShadow="False"
+                        BorderColor="#D63384"
+                        BackgroundColor="White">
+                        <Image Source="profile.jpg" Aspect="AspectFill" />
+                    </Frame>
+
+                    <!-- Info -->
+                    <Label Text="Angel, 21" FontSize="24" TextColor="#343A40" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Label Text="UNZA Student" FontSize="16" TextColor="#6C757D" HorizontalOptions="Center" />
+                    <Label Text="🍿 Movies • Food • Travel" FontSize="14" TextColor="#6C757D" HorizontalOptions="Center" />
+
+            <Grid>
+
+                <!-- Background profile image (blurred) -->
+                <Image Source="profile.png" Aspect="AspectFill" Opacity="0.25" />
+
+                <!-- Overlay -->
+                <Grid BackgroundColor="#99FFFFFF" />
+
+                <!-- Card Content -->
+             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="0,10,0,0">
+
+                <Button Text="❤️"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#D63384"
+                        TextColor="White"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased"/>
+                <Button Text="💬"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#FFB84D"
+                        TextColor="White"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased"
+                        />
+                <Button Text="❌"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#FF6B6B"
+                        TextColor="White"
+                        Pressed="OnButtonPressed"
+                        Released="OnButtonReleased"/>
+                </HorizontalStackLayout>
+
+
+            </Grid>
+        </Border>
+
+    </AbsoluteLayout>
+</ContentPage>
