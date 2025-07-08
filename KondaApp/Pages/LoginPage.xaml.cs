@@ -6,4 +6,10 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private async void LoginButton_Clicked(object sender, EventArgs e)
+	{
+		// Navigate to the next page
+		await Navigation.PushAsync(new HomePage());
+    }
 }

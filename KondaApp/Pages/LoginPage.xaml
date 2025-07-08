@@ -10,7 +10,7 @@
             <BoxView HeightRequest="3" BackgroundColor="#FFDA2177" Margin="20"/>
             <Entry Placeholder="Username" Margin="20"/>
             <Entry Placeholder="Password" Margin="20"/>
-            <Button Text="Login"/>
+            <Button Text="Login"  Clicked="LoginButton_Clicked"/>
             <Label Text="Forgot Password?" HorizontalOptions="End" Margin="10"/>
         </VerticalStackLayout>
     </VerticalStackLayout>
