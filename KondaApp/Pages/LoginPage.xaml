@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KondaApp.Pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout>
+        <VerticalStackLayout Margin="60">
+            <Image Source="profile.png" WidthRequest="100"/>
+            <Label Text="Login" HorizontalOptions="Center" Margin="10" FontAttributes="Bold" FontSize="30"/>
+            <BoxView HeightRequest="3" BackgroundColor="#FFDA2177" Margin="20"/>
+            <Entry Placeholder="Username" Margin="20"/>
+            <Entry Placeholder="Password" Margin="20"/>
+            <Button Text="Login"/>
+            <Label Text="Forgot Password?" HorizontalOptions="End" Margin="10"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

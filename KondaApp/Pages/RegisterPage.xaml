@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KondaApp.Pages.RegisterPage"
+             Title="RegisterPage">
+       <ScrollView>
+                  <VerticalStackLayout>
+       <VerticalStackLayout Margin="50">
+              <Image Source="profile.png" WidthRequest="40"/>              
+        <Label Text="Register" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Name" x:Name="Name" Margin="20" />
+
+        <Entry Placeholder="NRC Number" x:Name="NRC" Margin="20" />
+                       
+       <Entry Placeholder="Student ID" x:Name="StudentId" Margin="20" />
+                       
+       <Entry Placeholder="Phone Number" x:Name="Number" Margin="20" />
+
+       <Entry Placeholder="Gender" x:Name="Gender" Margin="20" />
+
+       <Entry Placeholder="Program" x:Name="Program" Margin="20"/>
+
+       <Entry Placeholder="Year of study" x:Name="YearOfStudy" Margin="20"/>
+
+        <Entry Placeholder="Password" x:Name="passwordEntry" IsPassword="True" Margin="20" />
+
+        <Button Text="Register" x:Name="registerButton" BackgroundColor="#FFDA2177" Margin="20" /> 
+
+        <Label x:Name="statusLabel" TextColor="Red" HorizontalOptions="Center" />
+       </VerticalStackLayout>
+    </VerticalStackLayout>
+       </ScrollView>
+</ContentPage>
