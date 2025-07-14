@@ -10,7 +10,7 @@
     </ContentPage.Background>
     <ScrollView Padding="20">
         <VerticalStackLayout  Margin="50, 150">
-            <Image Source="icon.png" WidthRequest="200"/>
+            <Image Source="app_icon.png" WidthRequest="200"/>
             <Label Text="Welcome to Konda! " FontSize="30" HorizontalOptions="Center" />
             <Button Text="Get started" WidthRequest="250" Margin="10" Clicked="Get_Started" TextColor="#FF112222" FontAttributes="Bold" BackgroundColor="#FFE646DE"/>
         </VerticalStackLayout>

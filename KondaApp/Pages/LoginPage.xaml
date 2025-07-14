@@ -4,13 +4,13 @@
              x:Class="KondaApp.Pages.LoginPage"
              Title="LoginPage">
     <VerticalStackLayout>
-        <VerticalStackLayout Margin="60">
+        <VerticalStackLayout Margin="20" HorizontalOptions="Center" WidthRequest="350">
             <Image Source="profile.png" WidthRequest="100"/>
             <Label Text="Login" HorizontalOptions="Center" Margin="10" FontAttributes="Bold" FontSize="30"/>
             <BoxView HeightRequest="3" BackgroundColor="#FFDA2177" Margin="20"/>
             <Entry Placeholder="Username" Margin="20"/>
             <Entry Placeholder="Password" Margin="20"/>
-            <Button Text="Login"/>
+            <Button Text="Login"  Clicked="LoginButton_Clicked"/>
             <Label Text="Forgot Password?" HorizontalOptions="End" Margin="10"/>
         </VerticalStackLayout>
     </VerticalStackLayout>
