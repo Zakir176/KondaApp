@@ -20,7 +20,7 @@
             AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
             AbsoluteLayout.LayoutFlags="PositionProportional">
 
-                                <Frame
+                    <Frame
                         CornerRadius="100"
                         WidthRequest="100"
                         HeightRequest="100"
