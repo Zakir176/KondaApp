@@ -2,33 +2,51 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KondaApp.Pages.RegisterPage"
-             Title="RegisterPage">
-       <ScrollView>
-                  <VerticalStackLayout>
-       <VerticalStackLayout Margin="50">
-              <Image Source="profile.png" WidthRequest="40"/>              
-        <Label Text="Register" FontSize="24" HorizontalOptions="Center" />
-
-        <Entry Placeholder="Name" x:Name="Name" Margin="20" />
-
-        <Entry Placeholder="NRC Number" x:Name="NRC" Margin="20" />
-                       
-       <Entry Placeholder="Student ID" x:Name="StudentId" Margin="20" />
-                       
-       <Entry Placeholder="Phone Number" x:Name="Number" Margin="20" />
-
-       <Entry Placeholder="Gender" x:Name="Gender" Margin="20" />
-
-       <Entry Placeholder="Program" x:Name="Program" Margin="20"/>
-
-       <Entry Placeholder="Year of study" x:Name="YearOfStudy" Margin="20"/>
-
-        <Entry Placeholder="Password" x:Name="passwordEntry" IsPassword="True" Margin="20" />
-
-        <Button Text="Register" x:Name="registerButton" BackgroundColor="#FFDA2177" Margin="20" /> 
-
-        <Label x:Name="statusLabel" TextColor="Red" HorizontalOptions="Center" />
-       </VerticalStackLayout>
-    </VerticalStackLayout>
-       </ScrollView>
+             Title="Registeration">
+      <ScrollView>
+      <VerticalStackLayout>
+      <VerticalStackLayout Margin="50">
+            <Image Source="profile.png" WidthRequest="40"/>              
+            <Label Text="Register" FontSize="24" HorizontalOptions="Center" />
+            <Label Text="Find your person 💖" FontSize="24" FontAttributes="Bold" TextColor="#E91E63" HorizontalOptions="Center"/>
+            <Entry Placeholder="Full Name" Margin="10"/>
+            <Entry Placeholder="Email Address" Keyboard="Email" Margin="10"/>
+            <Entry Placeholder="Phone Number" Keyboard="Telephone" Margin="10"/>
+            <Entry Placeholder="Create a strong password" IsPassword="True" Margin="10"/>
+            <Entry Placeholder="Confirm password" IsPassword="True" Margin="10"/>
+            <DatePicker />
+            <Picker Title="Gender">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                        <x:String>Non-binary</x:String>
+                        <x:String>Prefer not to say</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker Title="Looking for">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Men</x:String>
+                        <x:String>Women</x:String>
+                        <x:String>Everyone</x:String>
+                        <x:String>Prefer not to say</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <CheckBox />
+            <Label Text="I agree to the Terms and Conditions" FontSize="12" />
+            <CheckBox />
+            <Label Text="I am 18 years or older" FontSize="12" />
+            <Button Text="Create Account" BackgroundColor="#E91E63" TextColor="White" CornerRadius="10" Margin="10"/>
+            <Button Text="Continue with Google" BackgroundColor="#DB4437" TextColor="White" CornerRadius="10" Margin="10"/>
+            <Button Text="Continue with Apple" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="10"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Already have an account?" FontSize="14"/>
+                <Label Text=" Log in" FontSize="14" TextColor="#E91E63" FontAttributes="Bold"/>
+            </HorizontalStackLayout>
+      </VerticalStackLayout>
+      </VerticalStackLayout>
+      </ScrollView>
 </ContentPage>
