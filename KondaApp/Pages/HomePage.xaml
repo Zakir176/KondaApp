@@ -6,47 +6,45 @@
     BackgroundColor="pink"
     Title="Konda">
 
-    <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <ScrollView>
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <SwipeView>
+    <Border
+        BackgroundColor="#80FFFFFF"
+        StrokeThickness="1"
+        Stroke="#FFFFFF"
+        WidthRequest="320"
+        HeightRequest="500">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="30" />
+        </Border.StrokeShape>
 
-        <!-- Swipeable Card with Glassmorphism -->
-        <Border
-            x:Name="ProfileCard"
-            Stroke="#FFFFFF"
-            BackgroundColor="#80FFFFFF"
-            StrokeThickness="1"
-            StrokeShape="RoundRectangle 30"
-            HeightRequest="460"
-            WidthRequest="320"
-            AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
-            AbsoluteLayout.LayoutFlags="PositionProportional">
+        <VerticalStackLayout Padding="20" Spacing="10" VerticalOptions="Center">
 
-                    <Frame
-                        CornerRadius="100"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        HorizontalOptions="Center"
-                        HasShadow="False"
-                        BorderColor="#D63384"
-                        BackgroundColor="White">
-                        <Image Source="profile.jpg" Aspect="AspectFill" />
-                    </Frame>
+            <!-- Profile Image -->
+            <Image Source="profile.jpg"
+                   Aspect="AspectFill"
+                   HeightRequest="240"
+                   WidthRequest="240"
+                   HorizontalOptions="Center" />
 
-                    <!-- Info -->
-                    <Label Text="Angel, 21" FontSize="24" TextColor="#343A40" FontAttributes="Bold" HorizontalOptions="Center" />
-                    <Label Text="UNZA Student" FontSize="16" TextColor="#6C757D" HorizontalOptions="Center" />
-                    <Label Text="🍿 Movies • Food • Travel" FontSize="14" TextColor="#6C757D" HorizontalOptions="Center" />
+            <!-- Bio Info -->
+            <Label Text="Angel, 21"
+                   FontSize="24"
+                   TextColor="#343A40"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Label Text="UNZA Student"
+                   FontSize="16"
+                   TextColor="#6C757D"
+                   HorizontalOptions="Center" />
+            <Label Text="🍿 Movies • Food • Travel"
+                   FontSize="14"
+                   TextColor="#6C757D"
+                   HorizontalOptions="Center" />
 
-            <Grid>
-
-                <!-- Background profile image (blurred) -->
-                <Image Source="profile.png" Aspect="AspectFill" Opacity="0.25" />
-
-                <!-- Overlay -->
-                <Grid BackgroundColor="#99FFFFFF" />
-
-                <!-- Card Content -->
-             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="0,10,0,0">
-
+            <!-- Action Buttons (Inside the Card) -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="0,10,0,0">
                 <Button Text="❤️"
                         WidthRequest="50"
                         HeightRequest="50"
@@ -54,7 +52,7 @@
                         BackgroundColor="#D63384"
                         TextColor="White"
                         Pressed="OnButtonPressed"
-                        Released="OnButtonReleased"/>
+                        Released="OnButtonReleased" />
                 <Button Text="💬"
                         WidthRequest="50"
                         HeightRequest="50"
@@ -62,8 +60,7 @@
                         BackgroundColor="#FFB84D"
                         TextColor="White"
                         Pressed="OnButtonPressed"
-                        Released="OnButtonReleased"
-                        />
+                        Released="OnButtonReleased" />
                 <Button Text="❌"
                         WidthRequest="50"
                         HeightRequest="50"
@@ -71,12 +68,11 @@
                         BackgroundColor="#FF6B6B"
                         TextColor="White"
                         Pressed="OnButtonPressed"
-                        Released="OnButtonReleased"/>
-                </HorizontalStackLayout>
-
-
-            </Grid>
-        </Border>
-
-    </AbsoluteLayout>
+                        Released="OnButtonReleased" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Border>
+    </SwipeView>
+    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
