@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KondaApp.Pages.RegisterPage"
-             Title="Registeration">
+             Title="Registration">
       <ScrollView>
       <VerticalStackLayout>
-      <VerticalStackLayout Margin="50">
+      <VerticalStackLayout Margin="50" HorizontalOptions="Center" WidthRequest="350">
             <Image Source="profile.png" WidthRequest="40"/>              
             <Label Text="Register" FontSize="24" HorizontalOptions="Center" />
             <Label Text="Find your person 💖" FontSize="24" FontAttributes="Bold" TextColor="#E91E63" HorizontalOptions="Center"/>

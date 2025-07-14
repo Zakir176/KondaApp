@@ -5,11 +5,11 @@
              Title="UserAgreementPage">
     <ScrollView>
         <VerticalStackLayout>
-       <VerticalStackLayout>
+       <VerticalStackLayout HorizontalOptions="Center">
                      <!-- Title -->
-        <Image Source="icon.png" HorizontalOptions="Center" Margin="2, 15" HeightRequest="70"/>
-        <Label Text="Konda" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,20"/>
-        <Label Text="User Agreement" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10"/>
+        <Image Source="app_icon.png" HorizontalOptions="Center" Margin="2, 15" HeightRequest="70"/>
+        <Label Text="Konda" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="20"/>
+        <Label Text="User Agreement" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="10"/>
         <BoxView HeightRequest="1" BackgroundColor="#FFDA2177" Margin="20,0"/>
 
                     <!-- Purpose of the App -->
@@ -33,8 +33,8 @@
             <Label Text="We are not responsible for actions beyond the app.&#10;Always exercise caution when meeting people in person.&#10;The app does not conduct criminal background checks." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
             <!--Add an i agree button before you can access the app-->
             <Grid ColumnDefinitions="*, *" RowDefinitions="Auto,Auto" Margin="10">
-                <Button Text="Register" Grid.Column="0" WidthRequest="90" CornerRadius="10" BackgroundColor="cyan" Clicked="Register_Button_Clicked"/>
-                <Button Text="Login" Grid.Column="1" WidthRequest="90" CornerRadius="10" BackgroundColor="#FFDA2177" Clicked="Login_Button_Clicked"/>
+                <Button Text="Register" Grid.Column="0" WidthRequest="90" CornerRadius="10" BackgroundColor="#FFD04ED0" Clicked="Register_Button_Clicked"/>
+                <Button Text="Login" Grid.Column="1" WidthRequest="90" CornerRadius="10" BackgroundColor="Pink" Clicked="Login_Button_Clicked"/>
             </Grid>
        </VerticalStackLayout>
 

@@ -10,7 +10,7 @@ public partial class HomePage : ContentPage
 	{
 		var swipeGesture = new PanGestureRecognizer();
 		swipeGesture.PanUpdated += OnSwiped;
-		ProfileCard.GestureRecognizers.Add(swipeGesture);
+		
 	}
 
 	private void OnSwiped(object sender, PanUpdatedEventArgs e)
@@ -18,7 +18,7 @@ public partial class HomePage : ContentPage
 		switch (e.StatusType)
 		{
 			case GestureStatus.Running:
-				ProfileCard.TranslationX = e.TotalX;
+			
 				break;
 
 			case GestureStatus.Completed:
@@ -26,12 +26,12 @@ public partial class HomePage : ContentPage
 				{
 					// Animate off-screen
 					var direction = e.TotalX > 0 ? 500 : -500;
-					ProfileCard.TranslateTo(direction, 0, 250, Easing.CubicOut);
+					
 				}
 				else
 				{
 					// Reset position
-					ProfileCard.TranslateTo(0, 0, 200, Easing.SpringOut);
+					
 				}
 				break;
 		}
