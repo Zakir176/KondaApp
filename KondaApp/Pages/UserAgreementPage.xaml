@@ -13,28 +13,28 @@
         <BoxView HeightRequest="1" BackgroundColor="#FFDA2177" Margin="20,0"/>
 
                     <!-- Purpose of the App -->
-            <Label Text="1. Purpose of the App" FontSize="16" FontAttributes="Bold" Margin="0,20,0,5"/>
-            <Label Text="This dating app connects students of Copperbelt University in a respectful, safe, and inclusive digital environment. By signing up, you agree to use the app for social and relationship-building purposes only." FontSize="14" LineBreakMode="WordWrap"/>
+            <Label Text="1. Purpose of the App" FontSize="16" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <Label Text="This dating app connects students of Copperbelt University in a respectful, safe, and inclusive digital environment. By signing up, you agree to use the app for social and relationship-building purposes only." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
 
                         <!-- Eligibility -->
-            <Label Text="2. Eligibility" FontSize="16" FontAttributes="Bold" Margin="0,20,0,5"/>
-            <Label Text="- You must be a current student at Copperbelt University.&#10;- You must be 18 years or older.&#10;- You agree to provide accurate and truthful information during registration." FontSize="14" LineBreakMode="WordWrap"/>
+            <Label Text="2. Eligibility" FontSize="16" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <Label Text="You must be a current student at Copperbelt University.&#10;You must be 18 years or older.&#10;You agree to provide accurate and truthful information during registration." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
 
             <!-- Code of Conduct -->
-            <Label Text="3. Code of Conduct" FontSize="16" FontAttributes="Bold" Margin="0,20,0,5"/>
-            <Label Text="- Treat all users with respect, dignity, and honesty.&#10;- Avoid offensive, abusive, or sexually explicit language or content.&#10;- Refrain from harassment, stalking, or any inappropriate behavior." FontSize="14" LineBreakMode="WordWrap"/>
+            <Label Text="3. Code of Conduct" FontSize="16" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <Label Text="Treat all users with respect, dignity, and honesty.&#10;Avoid offensive, abusive, or sexually explicit language or content.&#10;Refrain from harassment, stalking, or any inappropriate behavior." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
 
             <!-- Privacy Policy -->
-            <Label Text="4. Privacy and Data Use" FontSize="16" FontAttributes="Bold" Margin="0,20,0,5"/>
-            <Label Text="- Your personal data (such as name, age, academic program) will be collected and used to enhance the user experience.&#10;- Your data will be stored securely and not shared with third parties without your consent.&#10;- You may request to delete your account and data at any time." FontSize="14" LineBreakMode="WordWrap"/>
+            <Label Text="4. Privacy and Data Use" FontSize="16" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <Label Text="Your personal data (such as name, age, academic program) will be collected and used to enhance the user experience.&#10;Your data will be stored securely and not shared with third parties without your consent.&#10;You may request to delete your account and data at any time." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
 
             <!-- Risks and Limitations -->
-            <Label Text="5. Risks and Limitations" FontSize="16" FontAttributes="Bold" Margin="0,20,0,5"/>
-            <Label Text="- We are not responsible for actions beyond the app.&#10;- Always exercise caution when meeting people in person.&#10;- The app does not conduct criminal background checks." FontSize="14" LineBreakMode="WordWrap"/>
+            <Label Text="5. Risks and Limitations" FontSize="16" FontAttributes="Bold" Margin="10,20,0,5"/>
+            <Label Text="We are not responsible for actions beyond the app.&#10;Always exercise caution when meeting people in person.&#10;The app does not conduct criminal background checks." FontSize="14" LineBreakMode="WordWrap" Margin="20"/>
             <!--Add an i agree button before you can access the app-->
             <Grid ColumnDefinitions="*, *" RowDefinitions="Auto,Auto" Margin="10">
-                <Button Text="Register" Grid.Column="0" WidthRequest="90" CornerRadius="40" BackgroundColor="cyan" Clicked="Register_Button_Clicked"/>
-                <Button Text="Login" Grid.Column="1" WidthRequest="90" CornerRadius="40" BackgroundColor="#FFDA2177" Clicked="Login_Button_Clicked"/>
+                <Button Text="Register" Grid.Column="0" WidthRequest="90" CornerRadius="10" BackgroundColor="cyan" Clicked="Register_Button_Clicked"/>
+                <Button Text="Login" Grid.Column="1" WidthRequest="90" CornerRadius="10" BackgroundColor="#FFDA2177" Clicked="Login_Button_Clicked"/>
             </Grid>
        </VerticalStackLayout>
 

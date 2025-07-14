@@ -43,8 +43,12 @@
             <Button Text="Continue with Google" BackgroundColor="#DB4437" TextColor="White" CornerRadius="10" Margin="10"/>
             <Button Text="Continue with Apple" BackgroundColor="Black" TextColor="White" CornerRadius="10" Margin="10"/>
             <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Already have an account?" FontSize="14"/>
-                <Label Text=" Log in" FontSize="14" TextColor="#E91E63" FontAttributes="Bold"/>
+            <Label Text="Already have an account?" FontSize="14"/>
+            <Label Text=" Log in" FontSize="14" TextColor="#E91E63" FontAttributes="Bold">
+            <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnLoginTapped" />
+            </Label.GestureRecognizers>
+            </Label>
             </HorizontalStackLayout>
       </VerticalStackLayout>
       </VerticalStackLayout>
