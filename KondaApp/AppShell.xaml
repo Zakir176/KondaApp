@@ -3,13 +3,48 @@
     x:Class="KondaApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:KondaApp"
+    xmlns:pages="clr-namespace:KondaApp.Pages"
     Title="KondaApp">
 
             <!-- Page Routing -->
     <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
-    <!-- <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate pages:LoginPage}" />
-    <ShellContent Route="RegisterPage" ContentTemplate="{DataTemplate pages:RegisterPage}" />
-    <ShellContent Route="HomePage" ContentTemplate="{DataTemplate pages:HomePage}" /> -->
+     <!-- Home / Swiping -->
+    <FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent Title="Swipe" ContentTemplate="{DataTemplate local:HomePage}" />
+    </FlyoutItem>
 
+    <!-- Matches -->
+    <FlyoutItem Title="Matches" Icon="heart.png">
+        <ShellContent Title="Matches" ContentTemplate="{DataTemplate Pages:MatchesPage}" />
+    </FlyoutItem>
+
+    <!-- Profile -->
+    <FlyoutItem Title="My Profile" Icon="user.png">
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate Pages:ProfilePage}" />
+    </FlyoutItem>
+
+    <!-- Settings -->
+    <FlyoutItem Title="Settings" Icon="settings.png">
+        <ShellContent Title="Settings" ContentTemplate="{DataTemplate Pages:SettingsPage}" />
+    </FlyoutItem>
+
+    <!-- Logout (non-functional for now) -->
+    <FlyoutItem Title="Logout" Icon="logout.png">
+        <ShellContent Title="Logout" ContentTemplate="{DataTemplate Pages:LogoutPage}" />
+    </FlyoutItem>
+
+        <!-- 🔽 Bottom Tab Bar -->
+    <TabBar>
+        <!-- Home/Swipe -->
+        <ShellContent Title="Swipe" Icon="home.png"
+                      ContentTemplate="{DataTemplate Pages:HomePage}" />
+
+        <!-- Matches -->
+        <ShellContent Title="Matches" Icon="heart.png"
+                      ContentTemplate="{DataTemplate Pages:MatchesPage}" />
+
+        <!-- Chat -->
+        <ShellContent Title="Chat" Icon="chat.png"
+                      ContentTemplate="{DataTemplate Pages:ChatPage}" />
+    </TabBar>
 </Shell>
