@@ -1,0 +1,22 @@
+<ContentPage
+    x:Class="KondaApp.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Settings">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="Settings" FontSize="24" FontAttributes="Bold" />
+
+            <Switch IsToggled="True" />
+            <Label Text="Enable Notifications" />
+
+            <Switch IsToggled="False" />
+            <Label Text="Dark Mode" />
+
+            <Button Text="Edit Profile" BackgroundColor="#D63384" TextColor="White" />
+            <Button Text="Delete Account" BackgroundColor="#FF6B6B" TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
