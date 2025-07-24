@@ -13,7 +13,7 @@ public partial class HomePage : ContentPage
 		
 	}
 
-	private void OnSwiped(object sender, PanUpdatedEventArgs e)
+	void OnSwiped(object? sender, PanUpdatedEventArgs e)
 	{
 		switch (e.StatusType)
 		{
